@@ -8,7 +8,7 @@ import devograph
 import jax
 import jax.numpy as jnp
 import pytest
-from devograph._conv._product import (
+from hgx._conv._product import (
     concat_components,
     exp_map_poincare,
     exp_map_sphere,

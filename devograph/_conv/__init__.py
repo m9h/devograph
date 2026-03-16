@@ -1,8 +1,11 @@
-"""Geometric convolution layers for hypergraphs."""
+"""Geometric convolution layers for hypergraphs.
 
-from devograph._conv._hyperbolic import PoincareHypergraphConv as PoincareHypergraphConv
-from devograph._conv._lorentz import LorentzHypergraphConv as LorentzHypergraphConv
-from devograph._conv._product import (
+Re-exports from hgx for backward compatibility.
+"""
+
+from hgx._conv._hyperbolic import PoincareHypergraphConv as PoincareHypergraphConv
+from hgx._conv._lorentz import LorentzHypergraphConv as LorentzHypergraphConv
+from hgx._conv._product import (
     ProductHypergraphConv as ProductHypergraphConv,
     ProductManifold as ProductManifold,
     ProductManifoldConv as ProductManifoldConv,
@@ -12,6 +15,6 @@ from devograph._conv._product import (
 )
 
 try:
-    from devograph._conv._se3 import SE3HypergraphConv as SE3HypergraphConv
+    from hgx._conv._se3 import SE3HypergraphConv as SE3HypergraphConv
 except ImportError:
     pass
